@@ -17,7 +17,7 @@ To run this project, you need a web browser.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/student-list.git
+   git clone https://github.com/ArisLooi/student-list.git
 
 2. Navigate to the project directory: cd student-list
 
