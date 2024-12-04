@@ -1,0 +1,96 @@
+/*Global Styles: Sets default margin, padding, and font family for all elements.*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
+/*Body Styles: Sets the height to 100% of the viewport height and uses flexbox for layout.*/
+body {
+  height: 100vh;
+  display: flex;
+}
+
+/*Cover Styles: Initially hidden, displayed as a flex container with column direction and overflow hidden.*/
+#cover {
+  display: none;
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+#cover img {
+  flex: 1;
+  max-width: 100%;
+  padding: 80px;
+}
+
+/*Main Styles: Uses flexbox for layout, centers content, and adds padding.*/
+main {
+  flex: 1;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Titles Container Styles: Adds margin and bold font weight.*/
+#titles-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/*Buttons Container Styles: Adds margin and flexbox layout with a gap between buttons.*/
+#buttons-container {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+/*Button Styles: Sets padding, font size, border radius, and removes border style. Adds hover effects for cursor and background color changes.*/
+button {
+  flex: 1;
+  padding: 12px 23px;
+  font-size: 16px;
+  border-radius: 4px;
+  border-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button#primary {
+  background-color: #52784f;
+  color: white;
+}
+
+button#primary:hover {
+  background-color: #32592f;
+}
+
+button#secondary:hover {
+  background-color: #f4d2eb;
+}
+
+/*Media Query: Adjusts styles for screens wider than 1024px, including displaying the cover, increasing padding, and adjusting font sizes.*/
+
+@media only screen and (min-width: 1024px) {
+  #cover {
+    display: flex;
+  }
+
+  main {
+    padding: 80px;
+  }
+
+  #titles-container {
+    font-size: 32px;
+  }
+
+  button {
+    padding: 16px;
+    font-size: 24px;
+  }
+}

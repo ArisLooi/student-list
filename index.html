@@ -1,0 +1,37 @@
+<!-- refer to this slides for instruction, copy and paste the link in search bar: https://docs.google.com/presentation/d/1ZeGjkK3LrRBMwjWwqEkYGgB7EJlXV_w5xck2dUqHAhs/edit?usp=sharing -->
+
+<!DOCTYPE html> <!--DOCTYPE Declaration: <!DOCTYPE html> tells the browser that this is an HTML5 document.-->
+<html> <!--HTML Tag: <html> is the root element of the HTML document.-->
+  <head>
+    <meta charset="utf-8" /> <!--Sets the character encoding to UTF-8.-->
+    <meta name="viewport" content="width=device-width" /> <!-- Ensures the page is responsive and scales correctly on different devices.-->
+    <title>Student List</title> 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    /> <!-- Links to an external Google Font.-->
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!--Links to an external CSS file for styling.-->
+  </head>
+
+  <body>
+    <div id="cover">
+      <img src="bg.png" alt="cover">
+    </div>
+    <main>
+      <div>
+        <img src="logo.png" alt="logo">
+      </div>
+      <div id="titles-container">
+        <h1>Student List</h1>
+        <h1>Made Simple</h1>
+      </div>
+      <p>Optimize Your Class Roster!</p>
+      <div id="buttons-container">
+        <button id="primary" onclick="addStudent()">Add Student</button>
+        <button id="secondary" onclick="viewStudents()">View Students</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+
