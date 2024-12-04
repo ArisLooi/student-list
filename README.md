@@ -19,7 +19,9 @@ To run this project, you need a web browser.
    ```bash
    git clone https://github.com/ArisLooi/student-list.git
 
-2. Navigate to the project directory: cd student-list
+2. Navigate to the project directory:
+   ```bash
+   cd student-list
 
 ## Usage
 1. Open the index.html file in your web browser.
